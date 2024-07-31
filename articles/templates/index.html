@@ -14,6 +14,8 @@
             {% csrf_token %}
             <input type="submit" value="delete">
         </form>
+
+        <a href="{% url 'articles:update' id=article.id %}">update</a>
         
         <hr>
     {% endfor %}
